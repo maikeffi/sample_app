@@ -7,11 +7,15 @@ gem 'rails', '3.2.1'
 
 group  :development do
   gem 'sqlite3'
-  gem 'rspec-rails'
+  gem 'webrat'
+  gem 'rspec-rails','2.4.0'
 end
 group  :test do
   gem 'sqlite3'
-  gem 'rspec'
+  gem 'rspec','2.4.0'
+  gem 'spork'
+  gem 'guard-spork'
+  gem 'webrat'
 end
 
 group :production do
