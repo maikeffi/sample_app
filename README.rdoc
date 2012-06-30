@@ -5,3 +5,9 @@
 let see how much rails i learn after this session
 
 1) Learning to use test driven programming 
+	1) added Rspec
+	2) added Webrat
+	3) added Spork
+	4) ran spork , autotest
+	5) created test driven page for about us 
+	6) created test driven title for all pages
