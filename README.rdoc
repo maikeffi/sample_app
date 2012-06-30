@@ -3,3 +3,5 @@
 
 
 let see how much rails i learn after this session
+
+1) Learning to use test driven programming 
