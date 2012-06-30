@@ -3,6 +3,9 @@ require 'webrat'
 
 describe PagesController do
   render_views
+  before(:each)do
+  	@base_title = "Ruby on rails tutorial : sample app"
+  end
   describe "GET 'home'" do
     it "should be successful" do
       get 'home'
@@ -10,7 +13,8 @@ describe PagesController do
     end
     it "should have right title" do
       get 'home'
-      response.should have_selector("title", :content =>"Ruby on rails tutorial : sample app | Home")
+      response.should have_selector("title", 
+      								:content =>"#{@base_title}| Home")
     end
     it "should not have blank body" do
     	get 'home'
@@ -25,7 +29,8 @@ describe PagesController do
     end
     it "should have right title" do
       get 'contact'
-      response.should have_selector("title", :content =>"Ruby on rails tutorial : sample app | Contact")
+      response.should have_selector("title", 
+      								:content =>"#{@base_title}| Contact")
     end
     it "should not have blank body" do
     	get 'contact'
@@ -39,7 +44,8 @@ describe PagesController do
     end
     it "should have right title" do
       get 'about'
-      response.should have_selector("title", :content =>"Ruby on rails tutorial : sample app | About")
+      response.should have_selector("title", 
+      								:content =>"#{@base_title}| About")
     end
     it "should not have blank body" do
     	get 'about'
