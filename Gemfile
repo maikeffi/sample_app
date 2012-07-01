@@ -8,18 +8,20 @@ gem 'rails', '3.2.1'
 group  :development do
   gem 'sqlite3'
   gem 'webrat'
+  gem 'therubyracer'
   gem 'rspec-rails','2.4.0'
 end
 group  :test do
   gem 'sqlite3'
   gem 'rspec','2.4.0'
   gem 'spork'
+  gem 'therubyracer'
   gem 'guard-spork'
   gem 'webrat'
 end
 
 group :production do
-  gem 'pg'
+  #gem 'pg'
 end
 
 # Gems used only for assets and not required
