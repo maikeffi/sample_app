@@ -9,11 +9,12 @@ group  :development do
   gem 'sqlite3'
   gem 'webrat'
  # gem 'therubyracer'
-  gem 'rspec-rails','2.4.0'
+  gem 'rspec-rails', '2.10.0'
+  gem 'annotate','2.4.1.beta1'
 end
 group  :test do
   gem 'sqlite3'
-  gem 'rspec','2.4.0'
+  gem 'rspec','2.10'
   gem 'spork'
  # gem 'therubyracer'
   gem 'guard-spork'
