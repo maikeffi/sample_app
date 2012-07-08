@@ -12,11 +12,12 @@ describe UsersController do
       get :new
       response.should have_selector('title', :content => "Sign Up")
     end	 
+    
   end
   
   describe "Get show" do
   	before(:each) do
-  		@user = Factory(:user)
+  		@user = FactoryGirl.create(:user)
   	end
   	 it "should be successful" do
       get :show, :id => @user
@@ -27,8 +28,18 @@ describe UsersController do
       get :show, :id => @user
       assigns(:user).should == @user 	
      end
-  	
-  	 
+  	 it "should have right title" do
+      get :show, :id => @user
+      response.should have_selector('title', :content => @user.name)
+     end
+  	 it "should have right  user name" do
+      get :show, :id => @user
+      response.should have_selector('h1', :content => @user.name)
+     end
+     it "should have the a profile image" do
+     	get :show, :id => @user
+     	response.should have_selector('h1>img', :class => "gravatar")
+ 	 end
   end
 
 end
