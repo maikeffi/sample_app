@@ -1,4 +1,7 @@
 
 <h1>Stitch me </h1>
 <p>This is the home page for Stichme.in </p>
+<% if !signed_in? %>
 <%= link_to "Sign up now !",signup_path,:class => "signup_button round"%>
+
+<% end %>
