@@ -1,3 +1,4 @@
+
 .container{
 width: 710px;
 }
@@ -106,7 +107,7 @@ vertical-align:top;
 background: #ffc;
 }
 .profile img.gravatar{
-border: 1pxsolid#999;
+border: 1px solid #999;
 margin-bottom: -15px;
 }
 div.field,div.actions{
@@ -123,7 +124,7 @@ color: #fff;
 }
 #error_explanation {
 width: 400px;
-border: 2pxsolidred;
+border: 2px solid red;
 padding: 7px;
 padding-bottom: 12px;
 margin-bottom: 20px;
@@ -147,3 +148,16 @@ padding: 5px;
 font-size: 12px;
 list-style:square;
 }
+
+#slide{
+	
+}
+#slideshow{
+	width:670px;
+	height:300px;
+	display:-webkit-box;
+	-webkit-border-radius:20px;
+	-webkit-box-orient:horizontal;	
+	-webkit-box-flex:1;
+}
+
