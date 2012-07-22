@@ -34,7 +34,7 @@ describe "LayoutsLinks" do
   	response.should have_selector('title', :content => "Contact")
   	click_link "Home"
   	response.should have_selector('title', :content => "Home")
-  	click_link "Sign up now !"
+  	click_link "Sign Up!"
   	response.should have_selector('title', :content => "Sign Up")
   	response.should have_selector('a[href="/"]>img')
   	end
@@ -61,7 +61,7 @@ describe "LayoutsLinks" do
   	it "should have a profile link" do
   		visit root_path
   		response.should have_selector('a', :href => user_path(@user) ,
-  										   :content => "Profile")
+  										   :content => "My Account")
   	end	
   end	
 end

@@ -8,11 +8,12 @@
 					<li><%= link_to "My Account", user_path(current_user) %></li>
 				<% end %>
 				<li><%= link_to "24x7 Support", help_path %></li>
+				
 				<% if signed_in? %>
 					<li><%= link_to "Sign out", signout_path %></li>
 				<% else %>
-					<li><%= link_to "Login in", signin_path %></li>
-					<li><%= link_to "Sign up!",signup_path %></li>
+					<li><%= link_to "Sign in", signin_path %></li>
+					<li><%= link_to "Sign Up!",signup_path %></li>
 				<% end %>
 				
 			</ul>	
