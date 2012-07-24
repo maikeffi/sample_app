@@ -1,0 +1,29 @@
+
+		   <div id = "div_content">	
+			 
+			 <%= link_to blank, "#" %>	
+                   </div>
+<h1>Sign up</h1>
+<%= form_for @user, :validate => true do |f| %>
+	<%= render "shared/error_messages" %>
+	<div clas = "fields">
+		<%= f.label :name %> <br />
+		<%= f.text_field :name%>
+	</div>
+	<div clas = "fields">
+		<%= f.label :email %> <br />
+		<%= f.text_field :email%>
+	</div>
+	<div clas = "fields">
+		<%= f.label :password %> <br />
+		<%= f.password_field :password%>
+	</div>
+	<div clas = "fields">
+		<%= f.label :password_confirmation, "Confirmation" %> <br />
+		<%= f.password_field :password_confirmation%>
+	</div>
+	<div clas = "actions">
+		<%= f.submit "Sign up" %> <br />
+		
+	</div>
+<% end %>	

@@ -1,6 +1,6 @@
 
 		   <div id = "div_content">	
-			 
+			 <img id = "home_banner" alt="banner" src="banner_home.png">
 			 <%= link_to banner, root_path %>	
                    </div>
 		   <header class="group_bannner_left">

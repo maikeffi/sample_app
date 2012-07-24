@@ -18,6 +18,6 @@ module ApplicationHelper
 		image_tag("cart.png", :alt => "cart image")
 	end
 	def blank
-		image_tag("blank.png", :alt => "cart image",:id => "home_banner")	
+		image_tag("cart.png", :alt => "cart image",:id => "home_banner")	
 	end
 end

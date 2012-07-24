@@ -15,7 +15,7 @@
 					<%= f.label :password %> <br />
 					<%= f.password_field :password%>
 				</div>
-				<div class = "actions">
+				<div clas = "actions">
 					<%= f.submit "Sign In" %> <br />
 		
 				</div>

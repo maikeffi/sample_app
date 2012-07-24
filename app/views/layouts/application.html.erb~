@@ -7,13 +7,13 @@
 <body>
 	<div id = "container">
 		<%= render 'layouts/header'%>
-		<div id = "section_sec">
+		<section id = "section_sec">
 			<% flash.each do |key, value|%>
 			<div class = "flash <%= key %>"><%= value %></div>
 			<% end %>
 			
 			<%= yield %>
-		</div>	
+		</section>	
 	 	<%= render 'layouts/footer'%>
 	 	
 	</div>

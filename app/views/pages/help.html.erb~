@@ -1,7 +1,7 @@
 
 		   <div id = "div_content">	
 			 
-			 <%= link_to blank, "#" %>	
+			 <%= link_to banner, root_path %>	
                    </div>
 		   <header class="group_bannner_left">
 			<hgroup>

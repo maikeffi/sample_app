@@ -1,7 +1,7 @@
-			<div id = "div_content">	
-						 
-						 <%= link_to blank, "#" %>	
-			  </div>
+<div id = "div_content">	
+			 
+			 <%= link_to blank, "#" %>	
+  </div>
 
 		
 		   <header class="group_bannner_left">

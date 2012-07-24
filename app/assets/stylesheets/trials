@@ -1,0 +1,21 @@
+ <div id = "header_links">
+				<% if signed_in? %>
+					<%= link_to "My Account", user_path(current_user) %>
+				<% else %>	
+					<span>Welcome, Guest</span>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<% end %>
+			    	<% if signed_in? %>
+				<%= link_to "Sign out", signout_path %>
+				
+				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+				<% else %>
+				<%= link_to "Sign in", signin_path %>
+				&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+				<%= link_to "Sign Up!",signup_path %>
+				&nbsp;&nbsp;|&nbsp;&nbsp;
+				<% end %>
+				<span>Shopping cart&nbsp;&nbsp;&nbsp;</span>
+				<%= link_to cart, root_path %>
+				<a href="#">0 Item(s)</a>
+			</div>

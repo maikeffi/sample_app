@@ -8,7 +8,7 @@
 			<nav  >
 				<ul>	<li><%= link_to "About", about_path ,:id => "link_nav" %></li>
 					<li><%= link_to "Contact", contact_path ,:id => "link_nav" %></li>
-					
+					<li><%= link_to "Home", root_path, :id => "link_nav" %></li>
 					<% if signed_in? %>
 					<li><%= link_to "My Account", user_path(current_user),:id => "link_nav" %></li>
 					<% end %>
